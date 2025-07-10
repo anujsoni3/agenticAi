@@ -348,37 +348,28 @@ This isn't statistics. It's foresight.`,
                 <h2 className="text-5xl md:text-6xl font-bold mb-12 text-white">
                   About LIFELOOP
                 </h2>
-                
                 <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/30 rounded-xl p-8 mb-12">
-                  <div className="text-xl text-gray-300 leading-relaxed space-y-6">
-                    <p>
-                      <span className="text-cyan-400 font-bold">LIFELOOP</span> isn't just an app. It's a <span className="text-purple-400 font-bold">simulation layer for your entire future.</span>
-                    </p>
-                    <p>
-                      In a world where financial decisions are reactive, scattered, and emotionally charged, LIFELOOP offers a <span className="text-cyan-400">new realm—one where you can <strong>simulate your financial destiny before living it.</strong></span>
-                    </p>
-                    <p>
-                      What if you could feel the <span className="text-red-400">aftershocks of a market crash</span>, watch your goals <span className="text-yellow-400">unravel in a chain of choices</span>, or even <span className="text-purple-400">emotionally rehearse</span> a financial emergency… <span className="text-cyan-400 font-bold">before it ever happens?</span>
-                    </p>
-                    <p>
-                      Powered by <span className="text-cyan-400 font-bold">Agentic AI</span>, LIFELOOP is designed to:
-                    </p>
-                    <ul className="text-left max-w-3xl mx-auto space-y-2">
-                      <li>• <span className="text-cyan-400">Think like your future</span>—not just your present.</li>
-                      <li>• <span className="text-purple-400">Chain-react every decision</span>, warning you of butterfly effects.</li>
-                      <li>• <span className="text-yellow-400">Adapt emotionally</span>, monitoring your subconscious drift.</li>
-                      <li>• And simulate your money as if your entire life depended on it.</li>
-                    </ul>
-                    <p className="text-2xl font-bold">
-                      LIFELOOP is not a dashboard.<br/>
-                      It's your <span className="text-cyan-400">digital twin</span>... your <span className="text-purple-400">financial mirror</span>... your <span className="text-pink-400">guardian simulation</span>.
-                    </p>
-                    <p className="text-3xl font-bold text-cyan-400">
-                      Welcome to the age where <strong>you don't just track your future.<br/>
-                      You test it.</strong>
-                    </p>
-                  </div>
-                </div>
+  <div className="text-xl text-gray-300 leading-relaxed space-y-6">
+    <p>
+      <span className="text-cyan-400 font-bold">💡 LIFELOOP</span> – Your Autonomous Financial Future<br/>
+      LIFELOOP is an <span className="text-purple-400 font-bold">Agentic AI system built to automate, simulate, and secure your financial life — without the guesswork.</span>
+    </p>
+    <p>
+      Powered by <span className="text-cyan-400 font-bold">Fi’s MCP Server</span> and <span className="text-cyan-400 font-bold">Google AI</span>, LIFELOOP understands your real financial data, simulates future outcomes, detects risks, and takes action on your behalf — from adjusting SIPs to pausing subscriptions during stress. 
+      <span className="text-purple-400 font-bold"> It doesn’t just advise — it acts.</span>
+    </p>
+    <p>
+      Whether it's a <span className="text-red-400">market crash</span>, <span className="text-yellow-400">emotional burnout</span>, or <span className="text-purple-400">what-if regret</span>, LIFELOOP’s intelligent agents respond instantly, making decisions that align with your <span className="text-cyan-400">goals, values, and future.</span>
+    </p>
+    <p>
+      <span className="text-pink-400 font-bold">💼 Think of it as your personal CFO, therapist, and strategist — in one.</span>
+    </p>
+    <p className="text-3xl font-bold text-cyan-400">
+      Welcome to the age where <strong>you don't just track your future.<br/>You test it.</strong>
+    </p>
+  </div>
+</div>
+
               </motion.div>
             </div>
           </motion.section>
