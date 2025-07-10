@@ -21,56 +21,64 @@ function App() {
 
   const features = [
     {
-      title: "🔥 Chaos Lab",
-      subtitle: "Simulate Crisis Scenarios",
-      description: `Enter the Chaos Lab—where disasters aren't feared, they're practiced.
-LIFELOOP throws you into simulations of job loss, inflation spikes, emergencies, and economic meltdowns, so you're not just financially ready—you're emotionally armored.
-Survival starts with rehearsal.`,
+      title: "🚂 Autonomous Simulation Engine ",
+      subtitle: "Simulate every decision before it happens.",
+      description: `An agentic AI layer that forecasts personalized future timelines based on real financial 
+behavior. Using modules like Chaos Lab, Quantum Regret, and Cross-Impact Engine. This is not generic prediction — it’s your life, simulated. Judges and users will remember this 
+because it's emotionally intelligent + strategically actionable. `,
       example: {
-        input: "What if I lose my job and market crashes?",
-        output: `Crisis compound effect detected.
-Assets depleted in 3.2 months.
-Debt: ₹4.7L.
-Recovery: 18 months.
-Emergency protocols activated.`
+        input: 'If theres another lockdown or recession this year, how badly will it hit me?',
+        output: ` Running Crisis Scenario: Recession + Job Loss   
+ Projected monthly income: ₹0 for 4 months   
+ Emergency fund exhaustion in: 3.2 months   
+ EMI defaults likely by: Month 5   
+ Health + Term Insurance coverage: ✅ Adequate   
+ Goal impact: Delays on Home Loan (9 months), Retirement (1.5 years) `
       },
       color: "text-red-400"
     },
     {
-      title: "⚙ Chain-Reaction Engine",
-      subtitle: "Cross-Impact AI",
-      description: `In LIFELOOP, every decision echoes.
-Spend today, and watch how it reshapes your career path 5 years later.
-This engine maps how one move causes a cascade of life shifts—like a domino run through your timeline.
-One move isn't just one move.`,
+      title: "👾 Emotion-Aware Financial Automation ",
+      subtitle: "Behind every spend is a feeling. Behind every feeling is a pattern.",
+      description: `A real-time emotion detection system (via the Emotional Emergency Monitor + 
+Self-Deception Collapse Core) that doesn’t just sense emotional turbulence, but responds 
+with decisions.
+It brings mental health and behavioral AI into fintech — a category-defining shift. LIFELOOP 
+becomes not just a financial agent, but a psychological safety net.`,
       example: {
-        input: "I want to buy an expensive car",
-        output: `Chain reaction analysis:
-Year 1: -₹8L savings, +lifestyle inflation
-Year 3: Delayed house purchase by 2 years
-Year 5: ₹15L less retirement corpus
-Year 10: Career pivot limited by debt
-Total cascade impact: 47% life trajectory shift`
+        input: "I’m tired. I feel like I’ve made zero progress this year",
+        output: ` Noted. Your tone and spend logs signal emotional stress: 
+• Avg balance: ₹1,200 (down from ₹4,000)   
+• 7 impulse spends in the last 10 days   
+• 2 ignored goal alerts 
+
+ Emotional Stress Score: 84% 
+
+ Would you like me to: 
+• Pause subscriptions for 30 days   
+• Switch you to Auto-Save Mode   
+• Suggest a No-Spend Weekend Challenge? 
+
+Say ‘Yes’ to start recovery mode.
+`
       },
       color: "text-purple-400",
     },
     {
-      title: "🖤 Black Mirror Mode",
-      subtitle: "Financial Black Mirror Mode",
-      description: `Turn on Black Mirror Mode, and face your darkest financial timeline.
-No safety nets. No assistance. Just raw consequences.
-This mode shows you the ugly truths behind your bad habits—before they destroy real-world stability.
-Dare to look… and evolve.`,
+      title: "🤖 Portable, Personalized AI Core ",
+      subtitle: "Your AI follows you, understands you, adapts to you — everywhere.",
+      description: `An exportable agent core (via JSON/APIs) that carries the user's memory, goals, risk profile, 
+and behavior into: 
+● WhatsApp ● Gmail ● Notion / Chrome plugin ● Excel 
+This breaks the trap of app-based AIs. Judges will appreciate the decentralized, 
+user-sovereign design — perfect for India-scale, privacy-sensitive users. `,
       example: {
-        input: "Show me my worst-case scenario",
-        output: `[BLACK MIRROR MODE ACTIVATED]
-Job loss at 35, no emergency fund
-Credit card debt spirals to ₹12L
-House foreclosure in 8 months
-Family stress leads to divorce
-Living with parents at 40
-No retirement savings until 45
-Reality check: This is your current trajectory.`
+        input: "Thinking of buying this gaming laptop. ₹1.2L. Should I go ahead? ",
+        output: `{LIFELOOP Agent (via WhatsApp/Gmail)}
+ Running Purchase Impact Report... 
+ Emergency fund drop: 42%   
+ Travel goal delay: 5 months   
+ Home loan eligibility: Lowered short-term `
       },
       color: "text-yellow-400",
     }
@@ -203,7 +211,9 @@ This isn't statistics. It's foresight.`,
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              The Simulation Layer for Your Entire Future
+              Simulate Your Future. Rewrite Your Fate.
+            An Agentic AI Realm Where Every Choice Echoes.
+
             </motion.p>
             
             <motion.p 
@@ -212,7 +222,9 @@ This isn't statistics. It's foresight.`,
               animate={heroInView ? { opacity: 1 } : {}}
               transition={{ delay: 1, duration: 1 }}
             >
-              Rewriting destiny through Agentic AI. One choice at a time.
+             Before you live your future, LIVE THROUGH it.
+            LIFELOOP lets you rehearse the next 10 years—before you risk a single step.
+
             </motion.p>
             
             <motion.button
@@ -223,7 +235,7 @@ This isn't statistics. It's foresight.`,
               transition={{ delay: 1.5, duration: 0.5 }}
               whileHover={{ boxShadow: "0 0 30px rgba(6, 182, 212, 0.5)" }}
             >
-              🔘 Launch the Simulation
+              🔁 Enter the Loop
             </motion.button>
           </motion.div>
         </div>
@@ -240,12 +252,15 @@ This isn't statistics. It's foresight.`,
                 transition={{ duration: 1 }}
               >
                 <h2 className="text-4xl md:text-6xl font-bold mb-8 text-cyan-400">
-                  The Spark
+                  The Spark <br/>⚡Where Curiosity Becomes Destiny
+
                 </h2>
                 
                 <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/30 rounded-lg p-8 mb-8">
                   <p className="text-2xl md:text-3xl text-white mb-6">
-                    What if AI could simulate not just your finances, but your future?
+                    What if you could preview the next 10 years of your life…
+before you risk a single decision?
+
                   </p>
                 </div>
 
@@ -263,7 +278,8 @@ This isn't statistics. It's foresight.`,
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 1, duration: 0.5 }}
                     >
-                      2025: You saved ₹40K
+                      2025: You built an emergency fund of ₹40K  
+
                     </motion.div>
                     <motion.div 
                       className="text-red-400"
@@ -271,7 +287,7 @@ This isn't statistics. It's foresight.`,
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 1.5, duration: 0.5 }}
                     >
-                      2027: Market crash
+                      2027: A sudden market crash wiped 22% of your investments
                     </motion.div>
                     <motion.div 
                       className="text-yellow-400"
@@ -279,7 +295,8 @@ This isn't statistics. It's foresight.`,
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 2, duration: 0.5 }}
                     >
-                      2029: You left your job
+                      2029: You resigned to chase a passion project
+
                     </motion.div>
                   </div>
                 </motion.div>
@@ -291,7 +308,8 @@ This isn't statistics. It's foresight.`,
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.5, duration: 0.5 }}
                 >
-                  🔘 Simulate My Future
+                  ⚡ See What Happens
+
                 </motion.button>
               </motion.div>
             )}
@@ -454,45 +472,7 @@ This isn't statistics. It's foresight.`,
       </AnimatePresence>
 
       {/* Video Section */}
-      <AnimatePresence>
-        {showFeatures && (
-          <motion.section
-            className="relative z-10 px-4 py-20"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
-            <div className="max-w-4xl mx-auto text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                  Watch LIFELOOP in Action
-                </h2>
-                <p className="text-xl text-gray-300 mb-12">
-                  See how LIFELOOP simulates futures, collapses lies, and reprograms destiny.
-                </p>
-                
-                <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/30 rounded-lg p-8 aspect-video flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5"></div>
-                  <div className="text-center relative z-10">
-                    <Play className="w-20 h-20 text-cyan-400 mx-auto mb-4 animate-pulse" />
-                    <p className="text-gray-400 text-lg">1-2 minute walkthrough coming soon</p>
-                    <p className="text-sm text-gray-500 mt-2">Intense music, glitch cuts, timeline switches</p>
-                  </div>
-                  
-                  {/* Animated background elements */}
-                  <div className="absolute top-4 left-4 w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
-                  <div className="absolute bottom-4 right-4 w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-                  <div className="absolute top-1/2 left-8 w-1 h-1 bg-pink-400 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-                </div>
-              </motion.div>
-            </div>
-          </motion.section>
-        )}
-      </AnimatePresence>
+      
 
       {/* Final Judgment Section */}
       <AnimatePresence>
@@ -511,12 +491,12 @@ This isn't statistics. It's foresight.`,
               >
                 <div className="mb-12">
                   <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                    <span className="block text-white">This is not FinTech.</span>
+                    <span className="block text-white">This isn't FinTech.</span>
                     <span className="block text-cyan-400">This is FutureTech.</span>
                   </h2>
                   
                   <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-                    LIFELOOP doesn't show you numbers—it shows you yourself.
+                    LIFELOOP doesn't show you numbers—it shows you "yourself"....
                   </p>
                 </div>
 
@@ -526,7 +506,8 @@ This isn't statistics. It's foresight.`,
                     whileHover={{ boxShadow: "0 0 30px rgba(6, 182, 212, 0.5)" }}
                   >
                     <Download className="w-6 h-6" />
-                    🔘 Download Pitch Deck
+                    🔗Access The Simulation Files
+
                   </motion.button>
                   
                   <motion.button
@@ -535,7 +516,7 @@ This isn't statistics. It's foresight.`,
                     whileHover={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.5)" }}
                   >
                     <RefreshCw className="w-6 h-6" />
-                    🔘 Replay Simulation
+                    Collapse Another Future
                   </motion.button>
                 </div>
               </motion.div>

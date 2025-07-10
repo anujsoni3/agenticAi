@@ -14,23 +14,40 @@ interface ConsoleInterfaceProps {
 }
 
 const predefinedResponses: Record<string, string> = {
-  'I want to retire at 40': `[SDCC Protocol Engaged]
-Analyzing behavior patterns...
-Current savings rate: 12%
-Required: 45%
-Self-deception level: HIGH
-Suggested retirement age: 52`,
+  'If there’s another lockdown or recession this year, how badly will it hit me?': `[Autonomous Simulation Engaged]
+Running Crisis Scenario: Recession + Job Loss   
+ Projected monthly income: ₹0 for 4 months   
+ Emergency fund exhaustion in: 3.2 months   
+ EMI defaults likely by: Month 5   
+ Health + Term Insurance coverage: ✅ Adequate   
+ Goal impact: Delays on Home Loan (9 months), Retirement (1.5 years) 
+✅
+ Suggested Strategy: 
+• Shift 10% of SIP to liquid fund   
+• Build freelance emergency lane   
+• Pause vacation goal for 6 months   
+Want me to make these adjustments?`,
   
-  'What if I lose my job?': `Chaos Lab activated. 
-Net worth drop: -42%. 
-Emergency fund: 2.1 months
-Recommending buffer setup.
-Recovery timeline: 8-14 months`,
+  'I’m tired. I feel like I’ve made zero progress this year.': ` Emotion-Aware Financial Automation activated. 
+ Noted. Your tone and spend logs signal emotional stress: 
+• Avg balance: ₹1,200 (down from ₹4,000)   
+• 7 impulse spends in the last 10 days   
+• 2 ignored goal alerts 
+ Emotional Stress Score: 84% 
+ Would you like me to: 
+• Pause subscriptions for 30 days   
+• Switch you to Auto-Save Mode   
+• Suggest a No-Spend Weekend Challenge?`,
   
-  'Should I buy a house now?': `Quantum Regret Engine processing...
-Timeline A (Buy): +23% short-term stress, -15% long-term wealth
-Timeline B (Wait): -8% opportunity cost, +31% flexibility
-Regret probability: 67% if you don't buy`,
+  'Thinking of buying this gaming laptop. ₹1.2L. Should I go ahead?': `LIFELOOP Agent (via WhatsApp/Gmail) processing...
+ Running Purchase Impact Report... 
+ Emergency fund drop: 42%   
+ Travel goal delay: 5 months   
+ Home loan eligibility: Lowered short-term 
+ Alternate: 
+• Wait 60 days   
+• Split ₹20,000/month to purchase plan   
+• Preserve emergency buffer `,
 };
 
 export default function ConsoleInterface({ onInteractionComplete }: ConsoleInterfaceProps) {
@@ -44,7 +61,7 @@ export default function ConsoleInterface({ onInteractionComplete }: ConsoleInter
     {
       id: '2',
       type: 'system',
-      content: 'Type your life question below...',
+      content: 'Your decisions are just code.... Type a question and watch your life unfold.',
       timestamp: new Date()
     }
   ]);
