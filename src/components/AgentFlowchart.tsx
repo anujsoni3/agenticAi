@@ -20,7 +20,7 @@ export default function AgentFlowchart() {
           {/* Master Flowchart - Using your uploaded image */}
           <div className="bg-black/40 rounded-lg p-6 border border-purple-500/20">
             <img
-              src="/src/assets/flowcharts/chaos lab.png"
+              src="/src/assets/flowcharts/chaos lab2.png"
               alt="Complete Agent Architecture Flowchart"
               className="w-full h-auto rounded-lg"
             />
