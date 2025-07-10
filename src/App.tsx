@@ -8,8 +8,7 @@ import GlitchText from './components/GlitchText';
 import TypewriterText from './components/TypewriterText';
 import ConsoleInterface from './components/ConsoleInterface';
 import FeatureCard from './components/FeatureCard';
-import AgentCard from './components/AgentCard';
-import AgentFlowchart from './components/AgentFlowchart';
+import FlipCard from './components/FlipCard';
 
 function App() {
   const [showConsole, setShowConsole] = useState(false);
@@ -22,8 +21,11 @@ function App() {
 
   const features = [
     {
-      title: "🔱 Chaos Lab",
-      subtitle: "Stress-test your life against 47 crisis scenarios",
+      title: "🔥 Chaos Lab",
+      subtitle: "Simulate Crisis Scenarios",
+      description: `Enter the Chaos Lab—where disasters aren't feared, they're practiced.
+LIFELOOP throws you into simulations of job loss, inflation spikes, emergencies, and economic meltdowns, so you're not just financially ready—you're emotionally armored.
+Survival starts with rehearsal.`,
       example: {
         input: "What if I lose my job and market crashes?",
         output: `Crisis compound effect detected.
@@ -32,104 +34,134 @@ Debt: ₹4.7L.
 Recovery: 18 months.
 Emergency protocols activated.`
       },
-      flowchartImage: "/src/assets/flowcharts/chaos lab.png",
-      color: "text-red-400",
-      emotionalSummary: "Transforms paralyzing fear of the unknown into actionable preparation. Users report feeling 73% more confident about handling crises after running simulations.",
-      technicalSummary: "Monte Carlo simulation engine with 47 crisis variables. Processes 10,000+ scenario combinations using real economic data and behavioral psychology models to stress-test your entire life."
+      color: "text-red-400"
     },
     {
-      title: "⚛ Quantum Regret Engine",
-      subtitle: "Simulates timelines A vs B for major decisions",
+      title: "⚙ Chain-Reaction Engine",
+      subtitle: "Cross-Impact AI",
+      description: `In LIFELOOP, every decision echoes.
+Spend today, and watch how it reshapes your career path 5 years later.
+This engine maps how one move causes a cascade of life shifts—like a domino run through your timeline.
+One move isn't just one move.`,
       example: {
-        input: "Should I buy a house or invest in stocks?",
-        output: `Timeline A (House): +23% short-term stability, +17% long-term wealth
-Timeline B (Stocks): -8% stability, +31% growth potential
-Net Happiness: House wins by 12%
-Regret probability: 34% if you choose stocks
-Confidence level: 87%`
+        input: "I want to buy an expensive car",
+        output: `Chain reaction analysis:
+Year 1: -₹8L savings, +lifestyle inflation
+Year 3: Delayed house purchase by 2 years
+Year 5: ₹15L less retirement corpus
+Year 10: Career pivot limited by debt
+Total cascade impact: 47% life trajectory shift`
       },
-      flowchartImage: "/src/assets/flowcharts/quantum regret 2.png",
       color: "text-purple-400",
-      emotionalSummary: "Eliminates decision paralysis by quantifying regret before you feel it. Users make 40% faster decisions with 60% higher satisfaction rates after seeing both timelines.",
-      technicalSummary: "Parallel universe simulation using quantum probability matrices. Analyzes 15+ life variables across multiple timeline branches with advanced behavioral outcome prediction algorithms."
     },
     {
-      title: "💀 SDCC Protocol",
-      subtitle: "Self-Deception Collapse Core - Analyzes unrealistic life goals",
+      title: "🖤 Black Mirror Mode",
+      subtitle: "Financial Black Mirror Mode",
+      description: `Turn on Black Mirror Mode, and face your darkest financial timeline.
+No safety nets. No assistance. Just raw consequences.
+This mode shows you the ugly truths behind your bad habits—before they destroy real-world stability.
+Dare to look… and evolve.`,
       example: {
-        input: "I want to retire at 40",
-        output: `[SDCC Protocol Engaged]
-Analyzing behavior patterns...
-Current savings rate: 12%
-Required: 45%
-Self-deception level: HIGH
-Reality gap: 33 percentage points
-Suggested retirement age: 52
-Alternative path: Side business + 25% savings rate = retire at 45`
+        input: "Show me my worst-case scenario",
+        output: `[BLACK MIRROR MODE ACTIVATED]
+Job loss at 35, no emergency fund
+Credit card debt spirals to ₹12L
+House foreclosure in 8 months
+Family stress leads to divorce
+Living with parents at 40
+No retirement savings until 45
+Reality check: This is your current trajectory.`
       },
-      flowchartImage: "/src/assets/flowcharts/sdcc.png",
       color: "text-yellow-400",
-      emotionalSummary: "Brutal honesty that liberates you from impossible dreams. Users initially resist but report 85% higher goal achievement rates after reality recalibration and actionable path creation.",
-      technicalSummary: "Advanced behavioral pattern analysis with cognitive bias detection. Cross-references stated goals with actual behavior using machine learning models trained on 100K+ real user behavioral patterns."
     }
   ];
 
   const agents = [
     {
       icon: Brain,
-      title: "Scenario Simulation Agent",
-      description: "Simulates real-world events and predicts financial impact using Monte Carlo methods.",
+      title: "🔥 Simulate Crisis Scenarios",
+      shortDescription: "Simulates real-world events and predicts financial impact using Monte Carlo methods.",
+      fullDescription: `Enter the Chaos Lab—where disasters aren't feared, they're practiced.
+LIFELOOP throws you into simulations of job loss, inflation spikes, emergencies, and economic meltdowns, so you're not just financially ready—you're emotionally armored.
+Survival starts with rehearsal.`,
       color: "blue",
-      agentName: "scenario_simulation_agent"
-    },
-    {
-      icon: AlertTriangle,
-      title: "Emotion Trigger Agent",
-      description: "Flags impulsive actions like panic selling or FOMO buying using behavioral analysis.",
-      color: "purple",
-      agentName: "emotion_trigger_agent"
+      agentName: "chaos_lab_agent"
     },
     {
       icon: RotateCcw,
-      title: "Quantum Regret Engine",
-      description: "Calculates regret scores by simulating timeline branches and decision outcomes.",
-      color: "orange",
-      agentName: "quantum_regret_engine_agent"
-    },
-    {
-      icon: Loop,
-      title: "Loop Report Agent",
-      description: "Detects repeated negative spending or behavioral loops using pattern recognition.",
-      color: "green",
-      agentName: "loop_report_agent"
-    },
-    {
-      icon: Route,
-      title: "Agent Router",
-      description: "Routes user prompts to correct module using advanced NLP and intent classification.",
-      color: "yellow",
-      agentName: "agent_router"
-    },
-    {
-      icon: Eye,
-      title: "Intent Detector",
-      description: "Understands the true intent behind vague prompts using semantic analysis.",
-      color: "cyan",
-      agentName: "intent_detector"
-    },
-    {
-      icon: Database,
-      title: "Memory Sync Agent",
-      description: "Maintains user data across modules for simulation continuity and learning.",
-      color: "red",
-      agentName: "memory_sync_agent"
+      title: "⚙ Chain-Reaction Engine",
+      shortDescription: "Maps how decisions create cascading life changes across your timeline.",
+      fullDescription: `In LIFELOOP, every decision echoes.
+Spend today, and watch how it reshapes your career path 5 years later.
+This engine maps how one move causes a cascade of life shifts—like a domino run through your timeline.
+One move isn't just one move.`,
+      color: "purple",
+      agentName: "chain_reaction_engine"
     },
     {
       icon: Skull,
-      title: "Black Mirror Agent",
-      description: "Simulates apocalyptic and extreme edge cases for comprehensive stress testing.",
-      color: "gray",
+      title: "🖤 Financial Black Mirror Mode",
+      shortDescription: "Shows your darkest financial timeline without safety nets.",
+      fullDescription: `Turn on Black Mirror Mode, and face your darkest financial timeline.
+No safety nets. No assistance. Just raw consequences.
+This mode shows you the ugly truths behind your bad habits—before they destroy real-world stability.
+Dare to look… and evolve.`,
+      color: "orange",
       agentName: "black_mirror_agent"
+    },
+    {
+      icon: AlertTriangle,
+      title: "🚨 Emotional Emergency Monitor",
+      shortDescription: "Watches for stress signals and impulsive behavior patterns.",
+      fullDescription: `Your bank balance doesn't feel your pain—but LIFELOOP does.
+This AI watches for stress signals, impulsive behavior, and burnout patterns... and steps in before you derail.
+It's not just smart—it's empathetic.
+Because emotions spend money too.`,
+      color: "green",
+      agentName: "emotional_monitor_agent"
+    },
+    {
+      icon: Route,
+      title: "🌐 Exportable AI Core",
+      shortDescription: "Export LIFELOOP's intelligence to your existing apps and platforms.",
+      fullDescription: `LIFELOOP's intelligence isn't trapped.
+You can export its simulation core into your own budgeting apps, fintech tools, or platforms—turning any system into a predictive oracle.
+Bring the storm wherever you go.`,
+      color: "yellow",
+      agentName: "exportable_core_agent"
+    },
+    {
+      icon: Database,
+      title: "📬 The Loop Report",
+      shortDescription: "Monthly AI-crafted digest of your financial narrative.",
+      fullDescription: `Every month, LIFELOOP sends you a hyper-personalized digest.
+Not boring numbers—but narratives: what changed, what might happen, and what you must prepare for.
+A mix of logic and prophecy, delivered like a story.
+Your future. Serialized.`,
+      color: "cyan",
+      agentName: "loop_report_agent"
+    },
+    {
+      icon: Target,
+      title: "🛡 SDCC Protocol",
+      shortDescription: "Simulation-Driven Contingency Creation for backup planning.",
+      fullDescription: `Think ahead. WAY ahead.
+LIFELOOP auto-builds backup plans by simulating failures in your goals and creating financial detours—so even your Plan C has a Plan D.
+It's not about "what if" anymore. It's "what next."
+Contingency isn't optional. It's coded.`,
+      color: "red",
+      agentName: "sdcc_protocol_agent"
+    },
+    {
+      icon: Zap,
+      title: "🧬 QRE Protocol",
+      shortDescription: "Quantum Risk Evaluator breaks down choices into ripple probabilities.",
+      fullDescription: `The Quantum Risk Evaluator breaks down every choice into ripple probabilities.
+It quantifies how likely your investments, plans, or risks will succeed, fail, or backfire—across multiple timelines.
+You're not guessing anymore. You're simulating across dimensions.
+This isn't statistics. It's foresight.`,
+      color: "gray",
+      agentName: "quantum_risk_evaluator"
     }
   ];
 
@@ -298,7 +330,62 @@ Alternative path: Side business + 25% savings rate = retire at 45`
         )}
       </AnimatePresence>
 
-      {/* 3 God-Level Features Section */}
+      {/* About Section */}
+      <AnimatePresence>
+        {showFeatures && (
+          <motion.section
+            className="relative z-10 px-4 py-20"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="max-w-5xl mx-auto text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <h2 className="text-5xl md:text-6xl font-bold mb-12 text-white">
+                  About LIFELOOP
+                </h2>
+                
+                <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/30 rounded-xl p-8 mb-12">
+                  <div className="text-xl text-gray-300 leading-relaxed space-y-6">
+                    <p>
+                      <span className="text-cyan-400 font-bold">LIFELOOP</span> isn't just an app. It's a <span className="text-purple-400 font-bold">simulation layer for your entire future.</span>
+                    </p>
+                    <p>
+                      In a world where financial decisions are reactive, scattered, and emotionally charged, LIFELOOP offers a <span className="text-cyan-400">new realm—one where you can <strong>simulate your financial destiny before living it.</strong></span>
+                    </p>
+                    <p>
+                      What if you could feel the <span className="text-red-400">aftershocks of a market crash</span>, watch your goals <span className="text-yellow-400">unravel in a chain of choices</span>, or even <span className="text-purple-400">emotionally rehearse</span> a financial emergency… <span className="text-cyan-400 font-bold">before it ever happens?</span>
+                    </p>
+                    <p>
+                      Powered by <span className="text-cyan-400 font-bold">Agentic AI</span>, LIFELOOP is designed to:
+                    </p>
+                    <ul className="text-left max-w-3xl mx-auto space-y-2">
+                      <li>• <span className="text-cyan-400">Think like your future</span>—not just your present.</li>
+                      <li>• <span className="text-purple-400">Chain-react every decision</span>, warning you of butterfly effects.</li>
+                      <li>• <span className="text-yellow-400">Adapt emotionally</span>, monitoring your subconscious drift.</li>
+                      <li>• And simulate your money as if your entire life depended on it.</li>
+                    </ul>
+                    <p className="text-2xl font-bold">
+                      LIFELOOP is not a dashboard.<br/>
+                      It's your <span className="text-cyan-400">digital twin</span>... your <span className="text-purple-400">financial mirror</span>... your <span className="text-pink-400">guardian simulation</span>.
+                    </p>
+                    <p className="text-3xl font-bold text-cyan-400">
+                      Welcome to the age where <strong>you don't just track your future.<br/>
+                      You test it.</strong>
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.section>
+        )}
+      </AnimatePresence>
+
+      {/* 3 Core Features Section */}
       <AnimatePresence>
         {showFeatures && (
           <motion.section
@@ -317,10 +404,10 @@ Alternative path: Side business + 25% savings rate = retire at 45`
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
                 <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-                  3 God-Level Features
+                  3 Core Features
                 </h2>
                 <p className="text-xl text-gray-300">
-                  Redesigned for the future of decision making
+                  The foundation of future simulation
                 </p>
               </motion.div>
 
@@ -336,7 +423,7 @@ Alternative path: Side business + 25% savings rate = retire at 45`
         )}
       </AnimatePresence>
 
-      {/* All 8 Agentic Modules Section */}
+      {/* 8 Advanced Features Section */}
       <AnimatePresence>
         {showFeatures && (
           <motion.section
@@ -354,19 +441,16 @@ Alternative path: Side business + 25% savings rate = retire at 45`
                 transition={{ duration: 0.8 }}
               >
                 <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-                  All 8 Agentic Modules
+                  8 Advanced Features
                 </h2>
                 <p className="text-xl text-gray-300">
-                  Each agent specialized for different aspects of life simulation
+                  Hover over each card to explore the complete feature set
                 </p>
               </motion.div>
 
-              {/* Master Agent Flowchart */}
-              <AgentFlowchart />
-
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {agents.map((agent, index) => (
-                  <AgentCard
+                  <FlipCard
                     key={agent.title}
                     {...agent}
                     index={index}
@@ -378,7 +462,7 @@ Alternative path: Side business + 25% savings rate = retire at 45`
         )}
       </AnimatePresence>
 
-      {/* Embedded Explainer Video Section */}
+      {/* Video Section */}
       <AnimatePresence>
         {showFeatures && (
           <motion.section
