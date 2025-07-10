@@ -21,7 +21,7 @@ function App() {
 
   const features = [
     {
-      title: "🚂 Autonomous Simulation Engine ",
+      title: " Autonomous Simulation Engine ",
       subtitle: "Simulate every decision before it happens.",
       description: `An agentic AI layer that forecasts personalized future timelines based on real financial 
 behavior. Using modules like Chaos Lab, Quantum Regret, and Cross-Impact Engine. This is not generic prediction — it’s your life, simulated. Judges and users will remember this 
@@ -32,13 +32,13 @@ because it's emotionally intelligent + strategically actionable. `,
  Projected monthly income: ₹0 for 4 months   
  Emergency fund exhaustion in: 3.2 months   
  EMI defaults likely by: Month 5   
- Health + Term Insurance coverage: ✅ Adequate   
+ Health + Term Insurance coverage:  Adequate   
  Goal impact: Delays on Home Loan (9 months), Retirement (1.5 years) `
       },
       color: "text-red-400"
     },
     {
-      title: "👾 Emotion-Aware Financial Automation ",
+      title: " Emotion-Aware Financial Automation ",
       subtitle: "Behind every spend is a feeling. Behind every feeling is a pattern.",
       description: `A real-time emotion detection system (via the Emotional Emergency Monitor + 
 Self-Deception Collapse Core) that doesn’t just sense emotional turbulence, but responds 
@@ -65,7 +65,7 @@ Say ‘Yes’ to start recovery mode.
       color: "text-purple-400",
     },
     {
-      title: "🤖 Portable, Personalized AI Core ",
+      title: " Portable, Personalized AI Core ",
       subtitle: "Your AI follows you, understands you, adapts to you — everywhere.",
       description: `An exportable agent core (via JSON/APIs) that carries the user's memory, goals, risk profile, 
 and behavior into: 
@@ -235,7 +235,7 @@ This isn't statistics. It's foresight.`,
               transition={{ delay: 1.5, duration: 0.5 }}
               whileHover={{ boxShadow: "0 0 30px rgba(6, 182, 212, 0.5)" }}
             >
-              🔁 Enter the Loop
+               Enter the Loop
             </motion.button>
           </motion.div>
         </div>
@@ -252,13 +252,13 @@ This isn't statistics. It's foresight.`,
                 transition={{ duration: 1 }}
               >
                 <h2 className="text-4xl md:text-6xl font-bold mb-8 text-cyan-400">
-                  The Spark <br/>⚡Where Curiosity Becomes Destiny
+                  The Spark -<br/>⚡Where Curiosity Becomes Destiny
 
                 </h2>
                 
                 <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/30 rounded-lg p-8 mb-8">
                   <p className="text-2xl md:text-3xl text-white mb-6">
-                    What if you could preview the next 10 years of your life…
+                    What if you could preview the next 10 years of your life
 before you risk a single decision?
 
                   </p>
@@ -453,7 +453,8 @@ before you risk a single decision?
                   8 Advanced Features
                 </h2>
                 <p className="text-xl text-gray-300">
-                  Hover over each card to explore the complete feature set
+                   Unlock LIFELOOP's complete feature arsenal.
+Hover to decode each simulation module.
                 </p>
               </motion.div>
 
@@ -496,7 +497,7 @@ before you risk a single decision?
                   </h2>
                   
                   <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-                    LIFELOOP doesn't show you numbers—it shows you "yourself"....
+                    LIFELOOP doesn't show you numbers—it shows you "yourself"
                   </p>
                 </div>
 

@@ -14,41 +14,42 @@ interface ConsoleInterfaceProps {
 }
 
 const predefinedResponses: Record<string, string> = {
-  'If there’s another lockdown or recession this year, how badly will it hit me?': `[Autonomous Simulation Engaged]
-Running Crisis Scenario: Recession + Job Loss   
- Projected monthly income: ₹0 for 4 months   
- Emergency fund exhaustion in: 3.2 months   
- EMI defaults likely by: Month 5   
- Health + Term Insurance coverage: ✅ Adequate   
- Goal impact: Delays on Home Loan (9 months), Retirement (1.5 years) 
-✅
- Suggested Strategy: 
-• Shift 10% of SIP to liquid fund   
-• Build freelance emergency lane   
-• Pause vacation goal for 6 months   
-Want me to make these adjustments?`,
-  
-  'I’m tired. I feel like I’ve made zero progress this year.': ` Emotion-Aware Financial Automation activated. 
- Noted. Your tone and spend logs signal emotional stress: 
-• Avg balance: ₹1,200 (down from ₹4,000)   
-• 7 impulse spends in the last 10 days   
-• 2 ignored goal alerts 
- Emotional Stress Score: 84% 
- Would you like me to: 
-• Pause subscriptions for 30 days   
-• Switch you to Auto-Save Mode   
-• Suggest a No-Spend Weekend Challenge?`,
-  
-  'Thinking of buying this gaming laptop. ₹1.2L. Should I go ahead?': `LIFELOOP Agent (via WhatsApp/Gmail) processing...
- Running Purchase Impact Report... 
- Emergency fund drop: 42%   
- Travel goal delay: 5 months   
- Home loan eligibility: Lowered short-term 
- Alternate: 
-• Wait 60 days   
-• Split ₹20,000/month to purchase plan   
-• Preserve emergency buffer `,
+  'If there’s another lockdown or recession this year, how badly will it hit me?': `[Crisis Mode Active]
+• Income: ₹0 (4 mo)
+• Funds last: 3.2 mo
+• EMI risk: Month 5
+• Delays: Home (9 mo), Retire (1.5 yrs)
+
+→ Shift 10% SIP to liquid
+→ Build freelance lane
+→ Pause vacation goal
+
+>> Apply changes?`,
+
+  'I’m tired. I feel like I’ve made zero progress this year.': `[Mood Detected: Burnout]
+• Balance: ₹1.2K ↓
+• 7 impulse spends
+• 2 goals ignored
+Stress: 84%
+
+→ Pause subs
+→ Enable Auto-Save
+→ Try No-Spend Weekend?
+
+>> Pick an option?`,
+
+  'Thinking of buying this gaming laptop. ₹1.2L. Should I go ahead?': `[Purchase Analysis]
+• Fund drop: -42%
+• Goal delay: +5 mo
+• Loan score: ↓
+
+→ Wait 60 days
+→ ₹20K/mo plan
+→ Keep buffer intact
+
+>> Proceed or hold?`,
 };
+
 
 export default function ConsoleInterface({ onInteractionComplete }: ConsoleInterfaceProps) {
   const [messages, setMessages] = useState<ConsoleMessage[]>([
